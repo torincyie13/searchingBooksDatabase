@@ -52,13 +52,11 @@ namespace searchingBooksDatabase
             // 
             // grdBooks
             // 
-            this.grdBooks.AutoGenerateColumns = false;
             this.grdBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdBooks.DataSource = this.sQLBooksDBDataSetBindingSource1;
             this.grdBooks.Location = new System.Drawing.Point(12, 34);
             this.grdBooks.Name = "grdBooks";
-            this.grdBooks.Size = new System.Drawing.Size(757, 335);
+            this.grdBooks.Size = new System.Drawing.Size(776, 359);
             this.grdBooks.TabIndex = 1;
             // 
             // sQLBooksDBDataSetBindingSource

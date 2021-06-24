@@ -47,7 +47,7 @@ namespace searchingBooksDatabase
                 // position
                 btnRolodex[i].Width = w;
                 btnRolodex[i].Height = buttonHeight;
-                btnRolodex[i].Left = 1;
+                btnRolodex[i].Left = l;
                 btnRolodex[i].Top = t;
                 // give cool colors
                 btnRolodex[i].BackColor = Color.Blue;
@@ -70,7 +70,7 @@ namespace searchingBooksDatabase
             SQLAll = "SELECT Authors.Author,Titles.Title,Publishers.Company_Name ";
             SQLAll += "FROM Authors, Titles, Publishers, Title_Author ";
             SQLAll += "WHERE Titles.ISBN = Title_Author.ISBN ";
-            SQLAll += "AND Authors.Au_ID = Title_Authors.Au_ID ";
+            SQLAll += "AND Authors.Au_ID = Title_Author.Au_ID ";
             SQLAll += "AND Titles.PubID = Publishers.PubID ";
             // show from and click on all records initially
             this.Show();
