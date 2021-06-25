@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace searchingBooksDatabase
 {
@@ -23,8 +24,10 @@ namespace searchingBooksDatabase
         Button[] btnRolodex = new Button[26];
         private void frmBooks_Load(object sender, EventArgs e)
         {
+            string path = Path.GetFullPath("SQLBooksDB.mdf");
+            MessageBox.Show(path);
             //conect to books database
-            booksConnection = new SqlConnection("Data Source=.\\SQLEXPRESS; AttachDbFilename=C:\\Users\\thawkins022713\\source\\repos\\searchingBooksDatabase\\SQLBooksDB.mdf; Integrated Security=True; Connect Timeout=30; User Instance=True");
+            booksConnection = new SqlConnection("Data Source=.\\SQLEXPRESS; AttachDbFilename=" + path + "; Integrated Security=True; Connect Timeout=30; User Instance=True");
             booksConnection.Open();
             // create Rolodex buttons for searching
             int w, lStart, l, t;
