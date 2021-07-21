@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SQLBooksDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SQLBooksDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.searchingBooksDatabase.Properties.Settings.GlobalReference.Default.SQLBooksDBConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SQLBooksDBConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="SQLBooksDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ex4_3.Properties.Settings.GlobalReference.Default.SQLBooksDBConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AuthorsTableAdapter" GeneratorDataComponentClassName="AuthorsTableAdapter" Name="Authors" UserDataComponentName="AuthorsTableAdapter">
@@ -258,7 +258,7 @@ SELECT Title, Year_Published, ISBN, PubID, Description, Notes, Subject, Comments
   <xs:element name="SQLBooksDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SQLBooksDBDataSet" msprop:Generator_UserDSName="SQLBooksDBDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Authors" msprop:Generator_TableClassName="AuthorsDataTable" msprop:Generator_TableVarName="tableAuthors" msprop:Generator_TablePropName="Authors" msprop:Generator_RowDeletingName="AuthorsRowDeleting" msprop:Generator_RowChangingName="AuthorsRowChanging" msprop:Generator_RowEvHandlerName="AuthorsRowChangeEventHandler" msprop:Generator_RowDeletedName="AuthorsRowDeleted" msprop:Generator_UserTableName="Authors" msprop:Generator_RowChangedName="AuthorsRowChanged" msprop:Generator_RowEvArgName="AuthorsRowChangeEvent" msprop:Generator_RowClassName="AuthorsRow">
+        <xs:element name="Authors" msprop:Generator_TableClassName="AuthorsDataTable" msprop:Generator_TableVarName="tableAuthors" msprop:Generator_RowChangedName="AuthorsRowChanged" msprop:Generator_TablePropName="Authors" msprop:Generator_RowDeletingName="AuthorsRowDeleting" msprop:Generator_RowChangingName="AuthorsRowChanging" msprop:Generator_RowEvHandlerName="AuthorsRowChangeEventHandler" msprop:Generator_RowDeletedName="AuthorsRowDeleted" msprop:Generator_RowClassName="AuthorsRow" msprop:Generator_UserTableName="Authors" msprop:Generator_RowEvArgName="AuthorsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Au_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnAu_ID" msprop:Generator_ColumnPropNameInRow="Au_ID" msprop:Generator_ColumnPropNameInTable="Au_IDColumn" msprop:Generator_UserColumnName="Au_ID" type="xs:int" />
@@ -273,7 +273,7 @@ SELECT Title, Year_Published, ISBN, PubID, Description, Notes, Subject, Comments
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Publishers" msprop:Generator_TableClassName="PublishersDataTable" msprop:Generator_TableVarName="tablePublishers" msprop:Generator_TablePropName="Publishers" msprop:Generator_RowDeletingName="PublishersRowDeleting" msprop:Generator_RowChangingName="PublishersRowChanging" msprop:Generator_RowEvHandlerName="PublishersRowChangeEventHandler" msprop:Generator_RowDeletedName="PublishersRowDeleted" msprop:Generator_UserTableName="Publishers" msprop:Generator_RowChangedName="PublishersRowChanged" msprop:Generator_RowEvArgName="PublishersRowChangeEvent" msprop:Generator_RowClassName="PublishersRow">
+        <xs:element name="Publishers" msprop:Generator_TableClassName="PublishersDataTable" msprop:Generator_TableVarName="tablePublishers" msprop:Generator_RowChangedName="PublishersRowChanged" msprop:Generator_TablePropName="Publishers" msprop:Generator_RowDeletingName="PublishersRowDeleting" msprop:Generator_RowChangingName="PublishersRowChanging" msprop:Generator_RowEvHandlerName="PublishersRowChangeEventHandler" msprop:Generator_RowDeletedName="PublishersRowDeleted" msprop:Generator_RowClassName="PublishersRow" msprop:Generator_UserTableName="Publishers" msprop:Generator_RowEvArgName="PublishersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PubID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPubID" msprop:Generator_ColumnPropNameInRow="PubID" msprop:Generator_ColumnPropNameInTable="PubIDColumn" msprop:Generator_UserColumnName="PubID" type="xs:int" />
@@ -344,7 +344,7 @@ SELECT Title, Year_Published, ISBN, PubID, Description, Notes, Subject, Comments
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Title_Author" msprop:Generator_TableClassName="Title_AuthorDataTable" msprop:Generator_TableVarName="tableTitle_Author" msprop:Generator_TablePropName="Title_Author" msprop:Generator_RowDeletingName="Title_AuthorRowDeleting" msprop:Generator_RowChangingName="Title_AuthorRowChanging" msprop:Generator_RowEvHandlerName="Title_AuthorRowChangeEventHandler" msprop:Generator_RowDeletedName="Title_AuthorRowDeleted" msprop:Generator_UserTableName="Title_Author" msprop:Generator_RowChangedName="Title_AuthorRowChanged" msprop:Generator_RowEvArgName="Title_AuthorRowChangeEvent" msprop:Generator_RowClassName="Title_AuthorRow">
+        <xs:element name="Title_Author" msprop:Generator_TableClassName="Title_AuthorDataTable" msprop:Generator_TableVarName="tableTitle_Author" msprop:Generator_RowChangedName="Title_AuthorRowChanged" msprop:Generator_TablePropName="Title_Author" msprop:Generator_RowDeletingName="Title_AuthorRowDeleting" msprop:Generator_RowChangingName="Title_AuthorRowChanging" msprop:Generator_RowEvHandlerName="Title_AuthorRowChangeEventHandler" msprop:Generator_RowDeletedName="Title_AuthorRowDeleted" msprop:Generator_RowClassName="Title_AuthorRow" msprop:Generator_UserTableName="Title_Author" msprop:Generator_RowEvArgName="Title_AuthorRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN">
@@ -358,7 +358,7 @@ SELECT Title, Year_Published, ISBN, PubID, Description, Notes, Subject, Comments
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Titles" msprop:Generator_TableClassName="TitlesDataTable" msprop:Generator_TableVarName="tableTitles" msprop:Generator_TablePropName="Titles" msprop:Generator_RowDeletingName="TitlesRowDeleting" msprop:Generator_RowChangingName="TitlesRowChanging" msprop:Generator_RowEvHandlerName="TitlesRowChangeEventHandler" msprop:Generator_RowDeletedName="TitlesRowDeleted" msprop:Generator_UserTableName="Titles" msprop:Generator_RowChangedName="TitlesRowChanged" msprop:Generator_RowEvArgName="TitlesRowChangeEvent" msprop:Generator_RowClassName="TitlesRow">
+        <xs:element name="Titles" msprop:Generator_TableClassName="TitlesDataTable" msprop:Generator_TableVarName="tableTitles" msprop:Generator_RowChangedName="TitlesRowChanged" msprop:Generator_TablePropName="Titles" msprop:Generator_RowDeletingName="TitlesRowDeleting" msprop:Generator_RowChangingName="TitlesRowChanging" msprop:Generator_RowEvHandlerName="TitlesRowChangeEventHandler" msprop:Generator_RowDeletedName="TitlesRowDeleted" msprop:Generator_RowClassName="TitlesRow" msprop:Generator_UserTableName="Titles" msprop:Generator_RowEvArgName="TitlesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
@@ -431,8 +431,8 @@ SELECT Title, Year_Published, ISBN, PubID, Description, Notes, Subject, Comments
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Title_Author_x0024__x007B_BD291496-E5FD-11CF-80D3-00AA00C0094F_x007D_" msdata:parent="Authors" msdata:child="Title_Author" msdata:parentkey="Au_ID" msdata:childkey="Au_ID" msprop:Generator_UserChildTable="Title_Author" msprop:Generator_ChildPropName="GetTitle_AuthorRows" msprop:Generator_UserRelationName="Title_Author${BD291496-E5FD-11CF-80D3-00AA00C0094F}" msprop:Generator_ParentPropName="AuthorsRow" msprop:Generator_RelationVarName="_relationTitle_Author__BD291496_E5FD_11CF_80D3_00AA00C0094F_" msprop:Generator_UserParentTable="Authors" />
-      <msdata:Relationship name="Titles_x0024__x007B_BD291497-E5FD-11CF-80D3-00AA00C0094F_x007D_" msdata:parent="Publishers" msdata:child="Titles" msdata:parentkey="PubID" msdata:childkey="PubID" msprop:Generator_UserChildTable="Titles" msprop:Generator_ChildPropName="GetTitlesRows" msprop:Generator_UserRelationName="Titles${BD291497-E5FD-11CF-80D3-00AA00C0094F}" msprop:Generator_ParentPropName="PublishersRow" msprop:Generator_RelationVarName="_relationTitles__BD291497_E5FD_11CF_80D3_00AA00C0094F_" msprop:Generator_UserParentTable="Publishers" />
+      <msdata:Relationship name="Title_Author_x0024__x007B_BD291496-E5FD-11CF-80D3-00AA00C0094F_x007D_" msdata:parent="Authors" msdata:child="Title_Author" msdata:parentkey="Au_ID" msdata:childkey="Au_ID" msprop:Generator_UserChildTable="Title_Author" msprop:Generator_ChildPropName="GetTitle_AuthorRows" msprop:Generator_UserRelationName="Title_Author${BD291496-E5FD-11CF-80D3-00AA00C0094F}" msprop:Generator_RelationVarName="_relationTitle_Author__BD291496_E5FD_11CF_80D3_00AA00C0094F_" msprop:Generator_UserParentTable="Authors" msprop:Generator_ParentPropName="AuthorsRow" />
+      <msdata:Relationship name="Titles_x0024__x007B_BD291497-E5FD-11CF-80D3-00AA00C0094F_x007D_" msdata:parent="Publishers" msdata:child="Titles" msdata:parentkey="PubID" msdata:childkey="PubID" msprop:Generator_UserChildTable="Titles" msprop:Generator_ChildPropName="GetTitlesRows" msprop:Generator_UserRelationName="Titles${BD291497-E5FD-11CF-80D3-00AA00C0094F}" msprop:Generator_RelationVarName="_relationTitles__BD291497_E5FD_11CF_80D3_00AA00C0094F_" msprop:Generator_UserParentTable="Publishers" msprop:Generator_ParentPropName="PublishersRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
